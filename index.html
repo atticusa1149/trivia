@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>trivia</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="rules">
+            <h1>Welcome to trivia!</h1>
+            <h3>whenever you get a question right, you get a point, but when you get one wrong, you lose a point</h3>
+            <h3>The rules: no cheating!</h3>
+            <h4>Your questions result:</h4>
+            <h4 id="answer">answer the question</h4>
+        </div>
+        <div class="q">
+            <h3>Question #1:</h3>
+            <h4>Who wrote the Iliad?</h4>
+            <h4>if you get this wrong, you can get a chance to get your score from -1 to 0, and if you get it correct, click on it again to get an extra point</h4>
+            <button onclick="wrong(this)">A: Edger Allen Poe</button><button onclick="wrong(this)">B: Euripides</button><button onclick="right(this)">C: Homer</button>
+        </div>
+        <div class="q">
+            <h3>Question #2:</h3>
+            <h4>Who was the first person to discover Einstein-Rosen Bridges</H4>
+            <button onclick="right(this)">A: Albert Einstein</button><button onclick="right(this)">B: Nathan Rosen</button><button onclick="wrong(this)"> Walter Flemming</button>
+        </div>
+        <div class="q">
+            <h3>Question: 3</h3>
+            <h4>Who discovered &pi;</h4>
+            <button onclick="right(this)">A:  Archimedes of Syracuse </button><button onclick="wrong(this)">B: Pythagoras</button><button onclick="wrong(this)">C: Socrates</button>
+        </div>
+        <div class="q">
+            <h3>Question 4:</h3>
+            <h4>what is the square root of 2581 rounded to the tenths</h4>
+            <input type="number" placeholder="your answer" id="root^2">
+            <button onclick="submit1(this)" id="submitButton">submit</button>
+        </div>
+        <div class="q">
+            <h3>Questiion 5:</h3>
+            <h4>What is the oldest religion</h4>
+            <button onclick="wrong(this)">A: Christianity</button><button onclick="wrong(this)">B: Judaism</button><button onclick="right(this)">C: Hinduism</button>
+        </div>
+        <button onclick="score()">click to reveal your score</button>
+        <p id="score"></p>
+        <a href='https://postimages.org/' target='_blank'><img src='https://i.postimg.cc/TPKpzzwN/trophy.png' border='0' alt='trophy'/></a>
+        <script src="script.js"></script>
+    </body>
+</html>
